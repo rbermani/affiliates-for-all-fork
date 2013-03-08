@@ -1,0 +1,79 @@
+
+<center>
+
+
+<div id="recaptcha">
+</div>
+
+<div id="captcha_key"><?php echo $v->publickey ?></div>
+
+<div id="captcha_entry">
+<span id="alreadyconfirm" class="tinytext"><a>Have a confirmation code already?</a></span>
+<form method="post">
+<table class="form">
+<tr><td>
+    <input type="hidden" id="challengeData" name="challengeData"/>
+    <input type="hidden" id="responseData" name="responseData"/>
+
+Email:
+    <input type="text" id="email" name="email" value=""/>
+    </td>
+    </tr>
+    <tr><td align="center">
+    <input type="submit" value="<?php echo __('Continue') ?>"/>
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<div id="status">
+<table><tr>
+<td id="message" class="mergeup">&nbsp;</td></tr></table>
+</div>
+</center>
+
+<div id="confirm_code">
+<span align="center" class="tinytext">You should have received a confirmation code via email, please enter it below</span>
+<form method="post">
+<table class="form">
+<tr>
+    <td><?php echo __('Email:') ?></td>
+    <td><input type="text" id="email_conf" name="email_conf" value=""/></td>
+    </tr>
+ <tr><td><?php echo __('Confirmation Code:') ?></td>
+<td><input type="text" id="confirmcode" name="confirmcode" value=""/></td>
+    </tr>
+
+  <tr><td colspan="2" align="center">
+    <input type="submit" value="<?php echo __('Continue') ?>"/>
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+<div id="newpassword">
+    <form method="post">
+    <table class="form">
+    <tr>
+    <td><?php echo __('Enter New Password:') ?></td>
+    <td><input type="password" id="newpass" name="newpass" value=""/></td>
+    </tr>
+    <tr>
+    <td><?php echo __('Enter New Password Again:') ?></td>
+    <td><input type="password" id="newpassconfirm" name="newpassconfirm" value=""/>
+    </td>
+    </tr>
+    <tr><td colspan="2" align="center">
+    <input type="submit" value="<?php echo __('Change Password') ?>"/>
+</td>
+</tr>
+    </table>
+
+
+    </form>
+
+
+</div>
+

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<config>
+  <sections>
+    <afa module="afa">
+      <label>Affiliates For All</label>
+      <tab>general</tab>
+      <frontend_type>text</frontend_type>
+      <sort_order>100</sort_order>
+      <show_in_default>1</show_in_default>
+      <show_in_website>1</show_in_website>
+      <show_in_store>1</show_in_store>
+      <groups>
+        <afa>
+          <label>Affiliates For All Integration</label>
+          <frontend_type>text</frontend_type>
+          <sort_order>10</sort_order>
+          <show_in_default>1</show_in_default>
+          <show_in_website>1</show_in_website>
+          <show_in_store>1</show_in_store>
+          <fields>
+            <url translate="label">
+              <label>URL of Affiliates for All</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>10</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </url>
+            <secret translate="label">
+              <label>Security Secret</label>
+              <frontend_type>text</frontend_type>
+              <sort_order>20</sort_order>
+              <show_in_default>1</show_in_default>
+              <show_in_website>1</show_in_website>
+              <show_in_store>1</show_in_store>
+            </secret>
+          </fields>
+        </afa>
+      </groups>
+    </afa>
+  </sections>
+</config>

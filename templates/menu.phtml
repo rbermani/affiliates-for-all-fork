@@ -1,0 +1,27 @@
+
+<div id="menu">
+  <?php if($this->admin) { ?>
+    <a href="admin-overview.php"><?php echo __('Site Overview') ?></a> |
+    <a href="admin-affiliates.php"><?php echo __('Affiliates') ?></a> |
+    <a href="admin-banners.php"><?php echo __('Banners') ?></a> |
+    <a href="admin-orders.php"><?php echo __('All Orders') ?></a> |
+    <a href="admin-payments.php"><?php echo __('All Payments') ?></a> |
+    <a href="overview.php"><?php echo __('Back') ?></a> |
+  <?php } else { ?>
+    <a href="overview.php"><?php echo __('Overview') ?></a> |
+    <a href="account.php"><?php echo __('Your Account') ?></a> |
+
+    <?php if($this->offer_banners) { ?>
+      <a href="banners.php"><?php echo __('Banners') ?></a> |
+    <?php } ?>
+    
+    <a href="orders.php"><?php echo __('Your Orders') ?></a> |
+    <a href="payments.php"><?php echo __('Your Payments') ?></a> |
+
+    <?php if($_SESSION['administrator']) { ?>
+      <a href="admin-overview.php"><?php echo __('Admin') ?></a> |
+    <?php } ?>
+  <?php } ?>
+
+  <a href="logout.php"><?php echo __('Log Out') ?></a>
+</div>

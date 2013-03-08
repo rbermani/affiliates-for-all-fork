@@ -1,0 +1,14 @@
+<?php 
+
+require('daterange.phtml');
+
+?>
+
+<div id="tabs" class="wide">
+  <ul>
+    <?php daterange_tabdefs() ?>
+  </ul>
+  <?php daterange_tabs('payments', FALSE) ?>
+</div>
+
+<?php daterange_dialogs() ?>
